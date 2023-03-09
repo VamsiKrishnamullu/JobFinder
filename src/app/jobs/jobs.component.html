@@ -1,0 +1,30 @@
+<div class="main-container">
+  <h2 class="jobs-header">Jobs</h2>
+  <table class="jobs-table">
+    <thead>
+      <tr>
+        <th>Job Number</th>
+        <th>Title</th>
+        <th>Job Start Date</th>
+        <th>Job Close Date</th>
+        <th>Experience</th>
+        <th>No. Of Openings</th>
+        <th>Description</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let job of jobs">
+        <td>{{ job.job_number }}</td>
+        <td><a [routerLink]="['/jobs', job.id]">{{ job.job_title }}</a></td>
+        <td>{{ job.job_start_date }}</td>
+        <td>{{ job.job_close_date }}</td>
+        <td>{{ job.experience_required }}</td>
+        <td>{{ job.number_of_openings }}</td>
+        <td>{{ job.job_notes }}</td>
+        <td><a [routerLink]="['/jobs', job.id]">Details</a></td>
+      </tr>
+    </tbody>
+  </table>
+  <button class="createjob-btn" (click)="createJob()">Create Job</button>
+</div>

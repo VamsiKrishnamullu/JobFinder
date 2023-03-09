@@ -1,0 +1,46 @@
+<div class="main-body">
+  <div class="createjob">
+    <h2>Create Job</h2>
+  </div>
+
+  <div class="form-body">
+    <form [formGroup]="jobForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="job_number">Job Number:</label>
+        <input type="text" id="job_number" formControlName="job_number">
+      </div>
+
+      <div class="form-group">
+        <label for="job_title">Job Title:</label>
+        <input type="text" id="job_title" formControlName="job_title">
+      </div>
+
+      <div class="form-group">
+        <label for="job_start_date">Job Start Date:</label>
+        <input type="date" id="job_start_date" formControlName="job_start_date">
+      </div>
+
+      <div class="form-group">
+        <label for="job_close_date">Job Close Date:</label>
+        <input type="date" id="job_close_date" formControlName="job_close_date">
+      </div>
+
+      <div class="form-group">
+        <label for="experience_required">Experience Required:</label>
+        <input type="text" id="experience_required" formControlName="experience_required">
+      </div>
+
+      <div class="form-group">
+        <label for="number_of_openings">Number of Openings:</label>
+        <input type="text" id="number_of_openings" formControlName="number_of_openings">
+      </div>
+
+      <div class="form-group">
+        <label for="job_notes">Job Description:</label>
+        <textarea id="job_notes" formControlName="job_notes"></textarea>
+      </div>
+
+      <button type="submit" class="submit-button">Create Job</button>
+    </form>
+  </div>
+</div>

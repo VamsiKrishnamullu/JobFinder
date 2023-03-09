@@ -1,0 +1,39 @@
+.main-container {
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .jobs-header {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .jobs-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .jobs-table th {
+    background-color: #008CBA;
+    color: white;
+    font-weight: bold;
+    padding: 8px;
+    border: 1px solid #ddd;
+  }
+  
+  .jobs-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .createjob-btn {
+    background-color: #008CBA;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
